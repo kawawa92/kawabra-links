@@ -64,8 +64,18 @@ function renderCard(item) {
   const registerButton = document.createElement('button');
   registerButton.className = 'register-button';
   registerButton.type = 'button';
-  registerButton.textContent = '登録する';
+  registerButton.textContent = '登録';
   main.append(registerButton);
+
+  const details = document.createElement('details');
+  const summary = document.createElement('summary');
+  summary.textContent = '詳細';
+  const url = document.createElement('p');
+  url.className = 'url-detail';
+  url.textContent = item.url;
+  details.append(summary, url);
+  main.append(details);
+
   card.append(main);
 
   const status = document.createElement('p');
@@ -81,16 +91,7 @@ function renderCard(item) {
     status.textContent = `${item.label}を${select.selectedOptions[0].textContent}へ登録します。`;
     window.location.href = deepLink;
   });
-  card.append(registerButton, status);
-
-  const details = document.createElement('details');
-  const summary = document.createElement('summary');
-  summary.textContent = '詳細';
-  const url = document.createElement('p');
-  url.className = 'url-detail';
-  url.textContent = item.url;
-  details.append(summary, url);
-  card.append(details);
+  card.append(status);
   return card;
 }
 
