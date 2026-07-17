@@ -6,6 +6,8 @@ const buttonItems = [
   { id: 'normal-attack', label: '通常攻撃', url: 'http://sp.pf.mbga.jp/12010355/?url=https%3A%2F%2Fmbga-sp.daisenran.jp%2Fbattle%2Fability_execute.ashx%3Faid%3D10%26jid%3D4008002%26rnd%3D438135&guid=ON', defaultIndex: 43 },
   { id: 'bow', label: '弓', url: 'http://sp.pf.mbga.jp/12010355/?guid=ON&url=https%3A%2F%2Fmbga-sp.daisenran.jp%2Fbattle%2Fability_execute.ashx%3Faid%3D50%26gnum%3D10&guid=ON', defaultIndex: 44 },
   { id: 'support', label: '応援', url: 'http://sp.pf.mbga.jp/12010355/?guid=ON&url=https%3A%2F%2Fmbga-sp.daisenran.jp%2Fbattle%2Fability_execute.ashx%3Faid%3D20%26gnum%3D10&guid=ON', defaultIndex: 45 },
+  { id: 'duty', label: '任務', url: 'http://g12010355.sp.pf.mbga.jp/?url=https%3A%2F%2Fmbga-sp.daisenran.jp%2Fapi%2Fduty_start.ashx%3Fdi%3D811%26rnd%3D137405&guid=ON', defaultIndex: 46 },
+  { id: 'gacha-10', label: 'ガチャ10枚', url: 'https://g12010355.sp.pf.mbga.jp/?url=https%3A%2F%2Fmbga-sp.daisenran.jp%2Fgacha%2Fgacha_execute_continue_rare.ashx%3Fgid%3D201%26rnd%3D947553&guid=ON', defaultIndex: 47 },
 ];
 
 function makeDestinations() {
