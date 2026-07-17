@@ -49,23 +49,25 @@ function renderCard(item) {
   const card = document.createElement('article');
   card.className = 'button-card';
 
+  const main = document.createElement('div');
+  main.className = 'card-main';
+
   const title = document.createElement('h2');
   title.textContent = item.label;
-  card.append(title);
+  main.append(title);
 
-  const label = document.createElement('label');
-  label.className = 'field-label';
-  label.textContent = '登録先';
   const select = document.createElement('select');
   select.setAttribute('aria-label', `${item.label}の登録先`);
   createDestinationOptions(item.defaultIndex).forEach((group) => select.append(group));
-  label.append(select);
-  card.append(label);
+  main.append(select);
 
   const registerButton = document.createElement('button');
   registerButton.className = 'register-button';
   registerButton.type = 'button';
   registerButton.textContent = '登録する';
+  main.append(registerButton);
+  card.append(main);
+
   const status = document.createElement('p');
   status.className = 'status';
   status.setAttribute('role', 'status');
