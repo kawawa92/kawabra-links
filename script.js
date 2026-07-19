@@ -1,7 +1,7 @@
 'use strict';
 
 const buttonItems = [
-  { id: 'battle', label: '決戦', url: 'https://g12010355.sp.pf.mbga.jp/?url=https%3A%2F%2Fmbga-sp.daisenran.jp%2Fbattle%2Fbattle_top.aspx%3Frnd%3D446717&guid=ON', defaultIndex: 41 },
+  { id: 'battle', label: '決戦TOP', url: 'https://g12010355.sp.pf.mbga.jp/?url=https%3A%2F%2Fmbga-sp.daisenran.jp%2Fbattle%2Fbattle_top.aspx%3Frnd%3D446717&guid=ON', defaultIndex: 41 },
   { id: 'recovery', label: '回復', url: 'http://sp.pf.mbga.jp/12010355/?url=https%3A%2F%2Fmbga-sp.daisenran.jp%2Fbattle%2Fability_execute.ashx%3Faid%3D30%26jid%3D4008002%26rnd%3D438135&guid=ON', defaultIndex: 42 },
   { id: 'normal-attack', label: '通常攻撃', url: 'http://sp.pf.mbga.jp/12010355/?url=https%3A%2F%2Fmbga-sp.daisenran.jp%2Fbattle%2Fability_execute.ashx%3Faid%3D10%26jid%3D4008002%26rnd%3D438135&guid=ON', defaultIndex: 43 },
   { id: 'bow', label: '弓', url: 'http://sp.pf.mbga.jp/12010355/?guid=ON&url=https%3A%2F%2Fmbga-sp.daisenran.jp%2Fbattle%2Fability_execute.ashx%3Faid%3D50%26gnum%3D10&guid=ON', defaultIndex: 44 },
